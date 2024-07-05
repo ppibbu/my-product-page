@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品展示</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>我的商品展示页面</h1>
+    </header>
+    <main>
+        <section class="product-list">
+            <div class="product" onclick="showDetail('product1.jpg', '产品1', '这是产品1的详细描述。')">
+                <img src="img/微信图片_20240530225713.jpg" alt="产品1">
+                <h2>产品1</h2>
+                <p>这是产品1的描述。</p>
+                <p class="price">$10.00</p>
+            </div>
+            <div class="product" onclick="showDetail('product2.jpg', '产品2', '这是产品2的详细描述。')">
+                <img src="img/微信图片_20240530225728.jpg" alt="产品2">
+                <h2>产品2</h2>
+                <p>这是产品2的描述。</p>
+                <p class="price">$20.00</p>
+            </div>
+            <!-- 可以继续添加更多产品 -->
+        </section>
+    </main>
+    <footer>
+        <p>版权所有 &copy; 2024</p>
+    </footer>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="产品详情">
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
